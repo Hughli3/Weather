@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 20 14:57:17 2017
 
-@author: Tianyi Xia
-"""
 import os
 import time
 #import io
