@@ -1,15 +1,23 @@
 import cv2
 import os
-
+import configparser
 import numpy as np
 
 os.chdir("C:/Users/hughli/OneDrive/henan/data")
-os.chdir("/Users/hughli/Pictures/video")
+os.chdir("/Users/hughli/Pictures/video/test")
 
+cf = configparser.ConfigParser()
+cf.read("capture_setting.ini")
 
+def information():
+    address_in = cf.get("address", "address_in")
+    address_out = cf.get("db", "address_out")
 
+    return address_in,address_out
 
-vc = cv2.VideoCapture('output.avi') #读入视频文件
+os.chdir(address_in)
+
+cv = cv2.VideoCapture('/Users/hughli/Pictures/video/test鹤壁_鹤壁_1_20170902080000_20170902090000_1.avi') #读入视频文件
 c=1
 
 
@@ -30,10 +38,9 @@ while rval:   #循环读取视频帧
     c = c + 1
     cv2.waitKey(1)
 
+rval
 vc.release()
 
-
-rval
 
 vc = cv2.VideoCapture('test.avi') #读入视频文件
 c=1
