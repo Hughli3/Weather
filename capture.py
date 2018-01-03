@@ -29,7 +29,6 @@ else:
 
 timeF = 1000  #视频帧计数间隔频率
 
-cv.open(0)
 
 while rval:   #循环读取视频帧
     rval, frame = vc.read()
@@ -38,7 +37,6 @@ while rval:   #循环读取视频帧
     c = c + 1
     cv2.waitKey(1)
 
-rval
 vc.release()
 
 
