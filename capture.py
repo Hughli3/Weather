@@ -17,7 +17,7 @@ def information():
 
 os.chdir(address_in)
 
-cv = cv2.VideoCapture('/Users/hughli/Pictures/video/test鹤壁_鹤壁_1_20170902080000_20170902090000_1.avi') #读入视频文件
+vc = cv2.VideoCapture('/Users/hughli/Pictures/video/test鹤壁_鹤壁_1_20170902080000_20170902090000_1.avi') #读入视频文件
 c=1
 
 
