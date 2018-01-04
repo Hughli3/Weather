@@ -4,7 +4,7 @@ import os
 #import sys
 #os.getpwd()  
 cf = configparser.ConfigParser()  
-cf.readfp(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini'))  
+cf.readfp(open('/home/hughli/scripts/python/Weather-mastersetting.ini'))  
 warnings.filterwarnings("ignore")
 
 def main():    
@@ -94,7 +94,7 @@ def dbhost(q,dbs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("db", "db_host", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新地址为:" + r)
         main()
     elif q == "2":
@@ -105,7 +105,7 @@ def dbport(q,dbs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("db", "db_port", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新端口为:" + r)
         main()
     elif q == "2":
@@ -116,7 +116,7 @@ def dbuser(q,dbs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("db", "db_user", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新用户名为:" + r)
         main()
     elif q == "2":
@@ -127,7 +127,7 @@ def dbpass(q,dbs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("db", "db_pass", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新密码为:" + r)
         main()
     elif q == "2":
@@ -138,7 +138,7 @@ def dbpath(q,dbs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("db", "db_path", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新路径为:" + r)
         main()
     elif q == "2":
@@ -149,7 +149,7 @@ def clpath(q,cls):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("cl", "cl_dlpath", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新下载路径为:" + r)
         main()
     elif q == "2":
@@ -161,7 +161,7 @@ def sqshost(q,sqs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("mysqldb", "sqldb_hostaddr", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新地址为:" + r)
         main()
     elif q == "2":
@@ -172,7 +172,7 @@ def sqsuser(q,sqs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("mysqldb", "sqldb_user", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新用户名为:" + r)
         main()
     elif q == "2":
@@ -183,7 +183,7 @@ def sqspwd(q,sqs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("mysqldb", "sqldb_pwd", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新密码为:" + r)
         main()
     elif q == "2":
@@ -194,7 +194,7 @@ def sqsdb(q,sqs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("mysqldb", "sqldb_db", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新数据库名为:" + r)
         main()
     elif q == "2":
@@ -205,7 +205,7 @@ def tbstbn(q,sqs):
     if q == "1":
         r = input("输入想要更改的内容:") 
         cf.set("table", "tb_name", r)
-        cf.write(open('c:\\Users\\Tianyi Xia\\Desktop\\pythonftp\\pythonftpwk2\\setting.ini', "w"))
+        cf.write(open('/home/hughli/scripts/python/Weather-mastersetting.ini', "w"))
         print("新表名为:" + r)
         main()
     elif q == "2":
